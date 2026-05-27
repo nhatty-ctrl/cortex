@@ -1,0 +1,6 @@
+{
+  "name": "Cortex",
+  "description": "An AI-powered investment intelligence platform using Bright Data to scrape and analyze the internet, generating sophisticated financial reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

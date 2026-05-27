@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Georgia:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-sophis-bg: #050505;
+  --color-sophis-nav: #000000;
+  --color-sophis-card: #0D0D0D;
+  --color-sophis-border: #1A1A1A;
+  --color-sophis-text: #E0DCD9;
+  --color-sophis-accent: #C5A059;
+  --color-sophis-muted: #888888;
+  --color-sophis-subtle: #555555;
+  --color-sophis-faint: #333333;
+
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-sophis-bg text-sophis-text;
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-sophis-subtle rounded-full;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-sophis-muted;
+  }
+  
+  .slide-in {
+    animation: slide-in 0.2s ease-out;
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
