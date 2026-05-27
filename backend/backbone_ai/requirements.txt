@@ -1,0 +1,21 @@
+# Backend runtime
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+httpx==0.27.0
+pydantic==2.7.0
+pydantic-settings==2.3.0
+python-dotenv==1.0.1
+
+# LLM clients
+google-generativeai==0.8.3
+
+# Browser automation
+playwright==1.45.0
+
+# Useful direct pins for transitive runtime stability
+protobuf==5.27.2
+
+# Optional native/vector stack:
+# chromadb==0.5.3
+# sentence-transformers==3.0.1
+# onnxruntime==1.18.1
